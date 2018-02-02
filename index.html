@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+    video {
+      max-width: 500px;
+      max-height: 300px;
+      margin: 15px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video src="" id="screen-video" autoplay muted></video>
+      <video src="" id="camera-video" autoplay muted></video>
+    </div>
+
+    <button id="start">Start Record</button>
+    <button id="stop">Stop Record</button>
+    <button id="reset">Reset Record</button>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
